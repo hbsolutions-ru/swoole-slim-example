@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
 use HBS\SwooleSlimApp\App;
+use HBS\SwooleSlimExample\Controller\Action;
 use Slim\App as SlimApp;
-use HBS\SwooleSlimExample\Controller\Action\HomeAction;
 
 return (function (): App {
     $swooleSlimApp = new App(
@@ -15,7 +15,8 @@ return (function (): App {
             // Add some Slim middleware here
         },
         function (SlimApp $app) {
-            $app->get('/', HomeAction::class);
+            $app->get('/', Action\HomeAction::class);
+            $app->get('/media', Action\MediaAction::class);
         }
     );
 

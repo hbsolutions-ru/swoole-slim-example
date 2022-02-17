@@ -5,6 +5,7 @@ Example of a Slim App running on the Swoole Server.
 
 - Clone repository
 - Go to code directory
+- Create your own .env (see `.env.example`)
 - Build and run docker container:
 ```
 docker build -t swoole-slim-example .
