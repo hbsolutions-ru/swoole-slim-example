@@ -1,0 +1,28 @@
+{
+    "name": "hbsolutions/swoole-slim-example",
+    "description": "Example of a Slim App running on the Swoole Server.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HBS Development Team",
+            "email": "dev.hbsolutions@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4",
+        "slim/slim": "4.*",
+        "slim/psr7": "9999999-dev",
+        "php-di/php-di": "9999999-dev",
+        "hbsolutions/swoole-slim-app": "9999999-dev"
+    },
+    "require-dev": {
+        "swoole/ide-helper": "9999999-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "HBS\\SwooleSlimExample\\": "src/"
+        }
+    }
+}
